@@ -14,6 +14,32 @@ ul {
 a {
     text-decoration: none;
 }
+/* Quote */
+blockquote{
+    margin: 50px 100px;
+    width: 700px;
+}
+blockquote p {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+    font-weight: lighter;
+  }
+h3, p{
+    margin: 0;
+}
+  blockquote p::before {
+    content: '\201C';
+  }
+  
+  blockquote p::after {
+    content: '\201D';
+  }
+  .quote-footer{
+    text-align: right;
+  }
 /* Header & Footer */
 .header, .footer{
     background-color: #1f2937;
@@ -23,14 +49,13 @@ a {
 .header{
     display: flex;
     flex-direction: column;
-    
-    padding: 20px;
 }
 
 .navbar{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .links{
@@ -44,6 +69,14 @@ a {
     font-weight: 900;
 }
 
+.button{
+    color: #f9faf8;
+    border-radius: 5px;
+    box-shadow: none;
+    width: max-content;
+    padding: 6px 16px;
+}
+
 /* Hero */
 .hero{
     display: flex;
@@ -51,13 +84,15 @@ a {
     justify-content:space-around;
     align-items: center;
     gap: 20px;
-    padding: 100px;
-    height: 50vh;
+    padding: 75px 0;
+    width: 800px;
+    align-self: center;
+    margin: 30px 0;
 }
 .hero-image{
-    height: 500px;
+    height: 300px;
     width: auto;
-    border-radius: 70px;
+    border-radius: 50px;
 }
 
 .hero-title{
@@ -67,16 +102,15 @@ a {
 
 .hero-button{
     background-color: #3882f6;
-    color: #f9faf8;
-    border-radius: 5px;
-    box-shadow: none;
+    
     border: none;
-    padding: 6px 16px;
+    
 }
 .hero-text{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 20px;
 }
 /* Main */
 .main{
@@ -86,21 +120,28 @@ a {
     justify-content: space-between;
 }
 .section{
-    height: 30vh;
     width: 100%;
 }
 
 .section1{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 50px;
+    margin: 30px 0;
+}
+
+.section1-title{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
 }
 
 .section2{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
     background-color: #e5e7eb;
-
 }
 
 .fav-list{
@@ -122,6 +163,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 5px;
     width: 200px;
     height: 200px;
 }
@@ -129,6 +171,32 @@ a {
 .card img{
     height: 100px;
     width: auto;
+    border: 2px solid #3882f6;
+    border-radius: 5px;
+    padding: 5px;
+}
+.section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call-action{
+    color: #e5e7eb;
+    align-items: center;
+    border-radius: 10px;
+    width: 800px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #3882f6;
+    margin: 30px 0;
+}
+
+.action-button{
+    background-color: #3882f6;
+    border-color: #e5e7eb;
+    border-style: solid;
 }
 /* Footer */
 .footer{
