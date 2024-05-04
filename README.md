@@ -1,5 +1,8 @@
 # landing-page
 
+See the current iteration of my Landing Page here:
+https://plectus24.github.io/landing-page/
+
 Credits:
 
 https://pixabay.com/illustrations/gengar-pokemon-character-smile-5432819/ Image by Incantabiless from Pixabay
